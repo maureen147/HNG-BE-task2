@@ -7,7 +7,7 @@ import organisationRouter from "./src/routes/organisation.js";
 import bodyParser from "body-parser";
 import { createUserTable } from "./model/user.js";
 import { createOrganisationTable, createUserOrganisationTable } from "./model/organisation.js";
-import { errorHandler } from "./src/middlewares/errorhandler.js";
+import { errorHandler } from "./src/middlewares/errorHandler.js";
 
 dotenv.config();
 
