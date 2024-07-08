@@ -12,7 +12,7 @@ import { errorHandler } from "./src/middlewares/errorHandler.js";
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 6200;
 
 // Middleware
 app.use(bodyParser.json());
