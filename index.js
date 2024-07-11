@@ -8,6 +8,7 @@ import bodyParser from "body-parser";
 import { createUserTable } from "./model/user.js";
 import { createOrganisationTable, createUserOrganisationTable } from "./model/organisation.js";
 import { errorHandler } from "./src/middlewares/errorHandler.js";
+import { welcomeMessage } from "./src/helpers/auth.js";
 
 dotenv.config();
 
@@ -21,12 +22,8 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
-app.get("/", (req, res) => {
-  return res.json({
-    status: "success",
-    message: "Welcome to momo server",
-  });
-});
+app.get("/", welcomeMessage);
+
 
 // Routes
 app.use("/api", authRouter);
