@@ -26,7 +26,7 @@ export const welcomeMessage =  (req, res) => {
     return res.json({
       status: "success",
       message: "Welcome to momo server",
-      baseUrl: "https://equal-mirella-myproject147-b2fbda9b.koyeb.app/",
+      baseUrl: "https://equal-mirella-myproject147-b2fbda9b.koyeb.app/api",
       endpoints: [
         {
           method: "POST",
